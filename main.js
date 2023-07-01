@@ -25,14 +25,18 @@ btnSalva.addEventListener('submit', function(e){
     e.preventDefault();
 
     addLinha();
+    calculaTotalCtt();
     attTabela();
-    calculaTotalCtt()
     attTotal();
 })
 function addLinha(){
     let nome = document.querySelector('#input-nome');
     let num = document.querySelector('#input-num');
-    totalNome.push(nome.value);
+    if(totalNome.includes(nome.value)){
+        alert('Esse contato já existe');
+    }else if(totalNum.includes(num.value)){
+        alert('Esse numero já existe!')
+    }else{totalNome.push(nome.value);
     totalNum.push(num.value);
     let linha = `<tr>`
     linha += `<td>${nome.value}</td>`
@@ -41,20 +45,21 @@ function addLinha(){
     linhas += linha
     nome.value = '';
     num.value = '';
+    }
 }
 function attTabela(){
     const tbody = document.querySelector('tbody');
     tbody.innerHTML = linhas
 }
 function calculaTotalCtt(){
-    let totalCtt = 0;
-    for (let i = 0; i < totalCtt; i++) {
-        totalCtt += totalNum[i];
-    }
-    console.log(totalCtt.length);
+    let totalCtt = totalNome.length;
+    return totalCtt
 }
 function attTotal(){
     let somatoriaCtt = calculaTotalCtt();
-    let spanTotal = `<span>${somatoriaCtt}</span>`
+    let spanTotal = `<tr>`
+    spanTotal += `<td>Total Contatos</td>`;
+    spanTotal += `<td><span>${somatoriaCtt}</span></td>`;
+    spanTotal += `</tr>`;
     document.querySelector('tfoot').innerHTML = spanTotal;
 }
