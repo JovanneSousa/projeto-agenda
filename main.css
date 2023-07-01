@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #3A3F51;
+    font-family: 'Quicksand', sans-serif;
+}
+.agenda{
+    font-size: 36px;
+    font-weight: bold;
+    padding: 16px;
+    display: flex;
+    justify-content: space-around;
+}
+.cadastro h2{
+    font-size: 36px ;
+    text-align: center;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+.cadastro{
+    padding: 24px;
+    display: none;
+}
+#sair{
+    background-color: #adadad;
+    color: #3A3F51;
+    font-weight: bold;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+#sair:hover{
+    background-color: rgba(255, 0, 0, 0.5);
+    color: white;
+}
+form{
+    display: flex;
+    justify-content: space-around;
+}
+input{
+    font-size: 18px;
+    padding: 8px;
+    border: none;
+    border-bottom: #3A3F51 2px solid;
+}
+#input-nome{
+    width: 150px;
+}
+.cadastro button{
+    background-color: rgba(0,148,50,0.7);
+    color: #adadad;
+    font-size: 18px;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+.btn1{
+    display: flex;
+    align-items: center;
+}
+.agenda button{
+    border: none;
+    background-color: rgba(0,148,50,0.7);
+    color: #adadad;
+    font-size: 42px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 40px;
+    height: 50px;
+}
+button:hover{
+    background-color: rgba(0,148,50,1);
+    color: white;
+}
+.container{
+    margin: 20px auto;
+    background-color: #adadad;
+    color: #3A3F51;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 15px;
+}
+table{
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+    max-height: 640px;
+}
+thead{
+    font-weight: bold   ;
+}
+thead th{
+    border-bottom: #3A3F51 solid 2px;
+}
+tbody td{
+    vertical-align: top;
+    padding: 8px;
+    border-bottom: 1px #3A3F51 solid;
+}
+footer{
+    background-color: #adadad;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 4px;
+}
+.bot{
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}

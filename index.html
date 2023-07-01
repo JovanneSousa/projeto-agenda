@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt.br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="agenda">
+                <h1>Agenda</h1>
+                <div class="btn1">
+                    <button type="submit" id="atv-cad">+</button>
+                </div>
+            </div>
+            <div class="cadastro">
+                <button type="submit" id="sair">X</button>
+                <h2>Adicionar contato</h2>
+                <form id="salvar">
+                    <input type="text" placeholder="Nome" id="input-nome" required>
+                    <input type="number" placeholder="Número" id="input-num" required>
+                    <button type="submit">Salvar</button>
+                </form>
+            </div>
+        </header>
+        <main>
+            <table cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Número</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total de contatos</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </main>
+    </div>
+    <footer>
+        <div class="bot">
+            &copy;Jovanne Sousa - Todos os direitos reservados - 2023
+        </div>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>
